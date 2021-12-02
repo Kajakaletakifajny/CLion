@@ -6,8 +6,7 @@ namespace stale
 }
 
 using namespace std;
-using namespace stale1;
-using namespace ;
+using namespace stale;
 int main()
 {
     double r;
