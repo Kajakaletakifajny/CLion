@@ -20,11 +20,11 @@ int main()
     double obwod;
     double *w_obwod = &obwod;
 
-    *w_obwod = 2 * (*w_bok1) + 2 * (*w_bok2);
+    *w_obwdo = 2 * (*w_bok1) + 2 * (*w_bok2);
 
     cout << "Wyniki: " << endl;
     cout << "Pole wynosi " << *w_pole << endl;
-    cout << "Obwod wynosi " << *w_obwod << endl;
+    cout << "Obwód wynosi " << *w_obwod << endl;
 
 
 
