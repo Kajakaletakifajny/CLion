@@ -11,7 +11,7 @@ int main()
     cin >> n;
 
     wsk = new int[n]; //mozemy okreslic rozmiar tablicy w trakcie wykonywaniu programu, nie mamy nazwy tablicy
-                        //rezerwujemy pamięć na stercie
+    //rezerwujemy pamięć na stercie
     for(int i=0;i<n;i++)
     {
         cout << "Podaj elementy tablicy" << endl;
