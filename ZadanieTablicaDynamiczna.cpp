@@ -21,7 +21,7 @@ int main()
     int max = *(wsk);
     for(int i=1;i<n;i++)
     {
-        if(*(wsk + i)>max);
+        if(*(wsk + i)<max);
         max=*(wsk+i);
     }
 
