@@ -1,0 +1,21 @@
+//c-napis(cstring) są obsługiwane przez tablicę znaków (statyczna bądź dynamiczna)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    /*char cnapis[20];//można by było od razu dać ='bolek';
+    //cnapis='bolek';//tak się nie da
+    cout << cnapis;
+    strcpy(cnapis, 'bolek'); //strcpy funkcja z string kopiująca literał łańcuchowy (napis) do tablicy
+                            //znajduje się w cstring
+    */
+
+    char *cnapis='C++';
+    //cnapis = 'bolek';//metoda działa ale jest deprecjonowana(obniża wartość)
+    strcpy(*cnapis, 'bolek');
+    cout << cnapis;
+
+
+    return 0;
+}
