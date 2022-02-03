@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    ofstream zapis("wyjscie.txt",ios_base::app);
+    zapis << 3 <<" kupa\n";
+    zapis.close();
+    return 0;
+}
+/*dołącznie append
+Stała    Znaczenie
+ios_base::in    Otwórz plik do odczytu
+ios_base::out    Otwórz plik do zapisu
+ios_base::ate    Po otwarciu pliku ustaw się na jego końcu
+ios_base::app    Dołącz na koniec pliku
+ios_base::trunc    Zredukuj rozmiar pliku do zera, jeśli istnieje
+ios_base::binary    Plik binarny
+Można łączyć tryby za pomoca operatora bitowej aternatywy „|”. Przykład:
+
+ofstream fileOut("dane.txt", ios_base::out | ios_base::app)*/
