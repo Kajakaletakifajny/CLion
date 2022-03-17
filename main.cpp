@@ -1,20 +1,19 @@
 #include <iostream>
+
 using namespace std;
 
-inline double inline_max(double x, double y) {
-    return (x > y) ? x:y;    //if x > than y return x else return y
-}
-inline double inline_min(double x, double y) {
-    if(x<y)
-        return x;
-    else
-        return y;
-    //return (x < y) ? x:y;
-}
+union Student{
+    int imie;
+    int ocena;
+};
 
-int main(){
-    double a=16,b=7;
-    cout << "The values: " << a << "," << b << endl;
-    cout << "The bigger is " << inline_max(a,b);
+int main()
+{
+    Student uczen;
+    uczen.ocena = 4;
+    uczen.imie = 5;
+    cout << sizeof(Student) << endl;
+    cout << uczen.ocena; //wypisze 5 bo jest ostania wpisana do union
+
     return 0;
 }
