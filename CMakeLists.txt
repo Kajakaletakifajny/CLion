@@ -8,4 +8,4 @@ add_executable(CLion
         .idea/modules.xml
         .idea/vcs.xml
         .idea/workspace.xml
-        main.cpp Zadanie2.cpp strings.cpp unit.h unit.cpp)
+        main.cpp Zadanie2.cpp strings.cpp m_unit.h m_unit.cpp)
