@@ -1,39 +1,38 @@
 #include <iostream>
 
+
 #define PI 3.14159
-#define READ_VARIABLE(m, v) std::cout << m; std::cin >> v
+
+#define READ_VARIABLE(m,v) std::cout<< m; std::cin>> v
 
 using namespace std;
-int main()
-{
 
+int main() {
     float promien;
 
-#idef READ_VARIABLE
-    READ_VARIABLE("Podaj promien kola ", promien);
+#ifdef READ_VARIABLE
+    READ_VARIABLE("Podaj promien kola: ", promien);
 #endif
 
-#indef READ_VARIABLE
+#ifndef READ_VARIABLE
     cout << "Podaj promien kola";
-    cin >> promien;
+    cin >>  promien;
 #endif
-
-    cout << promien << endl;
+    cout<<promien<<endl;
     float pole, obwod;
 
-#indef PI
+#ifdef PI
     pole = PI * promien * promien;
     obwod = 2 * PI * promien;
 #endif
 
-#indef PI
-    pole = 3.14 * promien * promien;
-    obwod = 2 * 3.14 * promien;
+#ifndef PI
+    pole= 3.14*promien*promien;
+    obowd = 2*3,14*promien;
 #endif
 
-    cout << pole << endl;
-    cout << obwod << endl;
+    cout<<pole<<endl;
+    cout<<obwod<<endl;
 
     return 0;
 }
-

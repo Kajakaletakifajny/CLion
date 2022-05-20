@@ -1,16 +1,12 @@
+#define TEXT(m,v) std::cout << m <<endl; std::cin >> v
 #include <iostream>
-#include <cmath>
-#include <vector>
-#include "m_unit.h"
+
 using namespace std;
 
-int main() {
-
-    double masa;
-    cout << "Podaj masę w funtach" << endl;
-    cin >> masa;
-    cout << kg(masa) << endl;
-
+main(){
+    float text;
+#ifdef TEXT("Podaj tekst\n", text);
+#endif
 
     return 0;
 }
