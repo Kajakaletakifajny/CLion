@@ -18,8 +18,8 @@ int main()
     cout << "Ile chcesz wstawic liczb?";
     cin >> ile;
 
-        //adding an element to the list
-        for(int i=0;i<ile;i++)
+    //adding an element to the list
+    for(int i=0;i<ile;i++)
     {
         cout << "Dodaj liczbe";
         cin >> var1;
