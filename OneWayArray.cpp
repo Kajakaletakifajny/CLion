@@ -30,7 +30,7 @@ int main()
     }
 
     element_listy *temp = head;    //adding head address to a temp variable
-    cout << endl << "List:" << endl;
+    cout << endl << "Lista:" << endl;
 
     while(temp!=NULL)           //navigate through the list
     {

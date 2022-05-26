@@ -1,12 +1,14 @@
 #include <iostream>
 #include <cstdio>
-#include <cmath>
 
 using namespace std;
 
 int main(){
+    char var1;
 
-
+    printf("Podaj zdanie \n");
+    scanf("%s",&var1);
+    printf(&var1);
 
     return 0;
 }
